@@ -1,1 +1,17 @@
-﻿
+﻿h1{
+	font-size: 25px;
+}
+.intro1{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+.intro2{
+	border: 2px solid black;
+    border-collapse: collapse;
+}
+ul, ol{
+    margin-top: 5px;
+}
+.gachduoi{
+	text-decoration: underline;
+}
