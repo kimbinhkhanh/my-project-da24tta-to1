@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang = "vi">
+	<head>
+		<title>Thiết kế form với HTML</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="../css/style2.css">
+	</head>
+	<body>
+		<div class = "container">
+			<form id = "frmLogin">
+				<h3 id="title">ĐĂNG NHẬP HỆ THỐNG</h3>
+				<div class = "form-group">
+				<label for = "txtUsername">Tên đăng nhập: </label>
+				<input class = "form-control" type = "text" id = "txtUsername" name = "txtUsername">
+				</div>
+				<div class = "form-group">
+				<label for = "txtPassword">Nhập mật khẩu: </label>
+				<input class = "form-control" type = "password" id = "txtPassword" name = "txtUsername">
+				</div>
+				<input class = "button" type = "submit" id = "sbLogin" name = "sbLogin" value = "Đăng nhập">
+				<input class = "button" type = "reset" id = "sbCancel" id = "sbCancel" value = "Nhập lại">
+				<input class="button" type="button" onclick="window.location.href='page3.html'" value="Đăng kí">
+			</form>
+		</div>
+	</body>
+</html>
