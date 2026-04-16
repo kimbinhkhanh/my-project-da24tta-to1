@@ -6,6 +6,50 @@
 		<link rel="stylesheet" href="../css/style3.css">
 	</head>
 	<body>
-		<h3>Đăng kí</h3>
+		<div class="container">
+			<form>
+				<h3 id="title">ĐĂNG KÍ THÀNH VIÊN CLB</h3>
+				<div class="form-group">
+					<label>Họ tên:</label>
+					<input type="text" name="hoten" required>
+				</div>
+				<div class="form-group">
+					<label>MSSV:</label>
+					<input type="text" name="mssv" pattern="[0-9]{9}" placeholder="9 chữ số" required>
+				</div>
+				<div class="form-group">
+					<label>Mã lớp:</label>
+					<select name="malop">
+						<option>DA24TTA</option>
+						<option>DA24TTB</option>
+						<option>DA24TTC</option>
+						<option>DA24TTD</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Giới tính:</label>
+					<div class="inline">
+						<label><input type="radio" name="gioitinh"> Nam</label>
+						<label><input type="radio" name="gioitinh"> Nữ</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Điểm mạnh:</label>
+					<div class="inline">
+						<label><input type="checkbox"> HTML</label>
+						<label><input type="checkbox"> CSS</label>
+						<label><input type="checkbox"> JS</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Nội dung giới thiệu:</label>
+					<textarea></textarea>
+				</div>
+				<div class ="button1">
+				<input class = "button2" type = "submit" id = "sbRegister" name = "sbRegister" value = "Đăng kí">
+				<input class = "button2" type = "reset" id = "sbCancel" id = "sbCancel" value = "Nhập lại">
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
