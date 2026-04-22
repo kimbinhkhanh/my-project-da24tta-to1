@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang = "vi">
+	<head>
+		<title>Thiết kế form với HTML</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="../css/style6.css">
+	</head>
+	<body>
+		<div class="container" id="container">
+			<h2>QUẢN LÍ HỌC PHÍ</h2>
+			<button type = "button" onclick = "add()">THÊM</button>
+		</div>
+		<script>
+			function add(){
+				const myRow = document.createElement("div");
+				myRow.setAttribute("class","row");
+				const myText = document.createTextNode("HENIKEN");
+				myRow.appendChild(myText);
+				document.getElementById("container").appendChild(myRow);
+			}
+		</script>
+	</body>
+</html>
