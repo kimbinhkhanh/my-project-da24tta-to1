@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang = "vi">
+	<head>
+		<title>Thiết kế form với HTML</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="../css/style4.css">
+	</head>
+	<body>
+		<table>
+			<h3>HÓA ĐƠN THANH TOÁN</h3>
+			<tr>
+				<th>STT</th>
+				<th>Tên sản phẩm</th>
+				<th>Số lượng</th>
+				<th>Đơn giá</th>
+				<th>Thành tiền</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>A</td>
+				<td class = "Số lượng">3</td>
+				<td class = "Đơn giá">1000</td>
+				<td class = "Thành tiền"></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>B</td>
+				<td class = "Số lượng">4</td>
+				<td class = "Đơn giá">2000</td>
+				<td class = "Thành tiền"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>C</td>
+				<td class = "Số lượng">5</td>
+				<td class = "Đơn giá">4000</td>
+				<td class = "Thành tiền"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>D</td>
+				<td class = "Số lượng">2</td>
+				<td class = "Đơn giá">5000</td>
+				<td class = "Thành tiền"></td>
+			</tr>
+			<tr>
+				<td colspan="3">Tổng thanh toán</td>
+				<td colspan="2" id = "tong"></td>
+			</tr>
+		</table>
+		<script>
+			const soLuong = document.getElementsByClassName("Số lượng");
+			const donGia = document.getElementsByClassName("Đơn giá");
+			const thanhTien = document.getElementsByClassName("Thành tiền");
+			let tong = 0;
+			for(let i=0; i < donGia.length; i++){
+				thanhTien[i].innerHTML = soLuong[i].innerHTML*donGia[i].innerHTML;
+				tong = tong + parseInt(thanhTien[i].innerHTML);
+			}
+			 document.getElementById("tong").innerHTML = tong;
+		</script>
+	</body>
+</html>
